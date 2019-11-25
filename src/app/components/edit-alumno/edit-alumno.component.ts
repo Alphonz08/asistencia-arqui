@@ -31,6 +31,7 @@ export class EditAlumnoComponent implements OnInit {
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.params['id'];
+    console.log(this.id)
     if(this.id) {
       this.edit = true;
       this.customerService.getCustomers().subscribe((
@@ -45,11 +46,12 @@ export class EditAlumnoComponent implements OnInit {
     else {
       this.edit = false;
     }
+    console.log(this.customer)
   }
 
   updateCustomer() {
     if (this.edit) {
-      delete this.customer;
+    
       this.customerService.updateCustomer(this.customer).subscribe((
         response: Customer ) => {
          console.log('Alumno Actualizado');
