@@ -52,7 +52,7 @@ const routes: Routes = [
   {
     path: 'editRfid/:id',
     component: EditRfidComponent
-  }
+  },
   {
     path: 'home',
     component: HomeComponent,
