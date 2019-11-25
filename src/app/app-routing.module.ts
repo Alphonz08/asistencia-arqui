@@ -14,7 +14,8 @@ import { EditRfidComponent } from './components/edit-rfid/edit-rfid.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: 'customers',
@@ -51,6 +52,11 @@ const routes: Routes = [
   {
     path: 'editRfid/:id',
     component: EditRfidComponent
+  }
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: {title: 'Bienvenido a Asistencia'}
   }
 ];
 
