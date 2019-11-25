@@ -42,7 +42,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "ngx-socket-io": "^3.0.1",
-    "nodemon": "^2.0.0",
+    "nodemon": "^2.0.1",
     "path": "^0.12.7",
     "protractor": "~5.4.0",
     "rxjs": "~6.4.0",
